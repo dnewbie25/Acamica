@@ -13,7 +13,7 @@
     h6{
       margin-left: 10px;
     }
-    span{
+    #descripcion-1 #descripcion-2 #descripcion-3{
       background-color: black;
       color:white;
     }
@@ -25,21 +25,47 @@
 <body>
   <h1 id="nombre">Daniel Steven Montoya Rojas</h1>
   <h6 id="fecha-nacimiento">Abril 20 de 1997</h6>
-  <p><span id="descripcion">Actualmente me encuentro estudiando ingeniería de sistemas y licenciatura en lenguas extranjeras. Me gustan mucho las artes marciales y todo lo relacionado con cómo las computadoras traducen de forma automática.</span></p>
+  <p><span id="descripcion-1">Actualmente me encuentro estudiando ingeniería de sistemas y licenciatura en lenguas extranjeras. Me gustan mucho las artes marciales y todo lo relacionado con cómo las computadoras traducen de forma automática.</span></p>
+
+  <p><span id="descripcion-2">Mi trabajo actual es como administrador Jr. de Salesforce para una empresa de ventas B2B.</span></p>
+
+  <p><span id="descripcion-3">He tenido bastante contacto con Python y Ruby porque en la empresa donde trabajo esas son las herramientas que usan para automatizar ciertas tareas.</span></p>
 
   <script>
     nombre = document.getElementById("nombre");
     nombre = addEventListener("click", function(){ alert ("Welcome to Dani's site")});
-
-    descripcion = document.getElementById("descripcion");
-    descripcion.addEventListener("mouseenter", function(){
-      descripcion.style.color = "black";
-      descripcion.style.backgroundColor = "white";
+    // cambio de color en descripcion-1
+    descripcion_1 = document.getElementById("descripcion-1");
+    descripcion_1.addEventListener("mouseenter", function(){
+      descripcion_1.style.color = "black";
+      descripcion_1.style.backgroundColor = "white";
     });
 
-    descripcion.addEventListener("mouseout", function(){
-      descripcion.style.color = "white";
-      descripcion.style.backgroundColor = "black";
+    descripcion_1.addEventListener("mouseout", function(){
+      descripcion_1.style.color = "white";
+      descripcion_1.style.backgroundColor = "black";
+    });
+    // cambio de color en descripcion-2
+    descripcion_2 = document.getElementById("descripcion-2");
+    descripcion_2.addEventListener("mouseenter", function(){
+      descripcion_2.style.color = "blue";
+      descripcion_2.style.backgroundColor = "red";
+    });
+
+    descripcion_2.addEventListener("mouseout", function(){
+      descripcion_2.style.color = "white";
+      descripcion_2.style.backgroundColor = "black";
+    });
+    // cambio de color en descripcion-3
+    descripcion_3 = document.getElementById("descripcion-3");
+    descripcion_3.addEventListener("mouseenter", function(){
+      descripcion_3.style.color = "black";
+      descripcion_3.style.backgroundColor = "white";
+    });
+
+    descripcion_3.addEventListener("mouseout", function(){
+      descripcion_3.style.color = "white";
+      descripcion_3.style.backgroundColor = "black";
     });
   </script>
 </body>
