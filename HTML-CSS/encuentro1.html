@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: rgb(223, 219, 219);
+    }
+
+    h1 {
+      color: red;
+    }
+
+    h6{
+      margin-left: 10px;
+    }
+    span{
+      background-color: black;
+      color:white;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acámica - Primera Página</title>
+</head>
+<body>
+  <h1 id="nombre">Daniel Steven Montoya Rojas</h1>
+  <h6 id="fecha-nacimiento">Abril 20 de 1997</h6>
+  <p><span id="descripcion">Actualmente me encuentro estudiando ingeniería de sistemas y licenciatura en lenguas extranjeras. Me gustan mucho las artes marciales y todo lo relacionado con cómo las computadoras traducen de forma automática.</span></p>
+
+  <script>
+    nombre = document.getElementById("nombre");
+    nombre = addEventListener("click", function(){ alert ("Welcome to Dani's site")});
+
+    descripcion = document.getElementById("descripcion");
+    descripcion.addEventListener("mouseenter", function(){
+      descripcion.style.color = "black";
+      descripcion.style.backgroundColor = "white";
+    });
+
+    descripcion.addEventListener("mouseout", function(){
+      descripcion.style.color = "white";
+      descripcion.style.backgroundColor = "black";
+    });
+  </script>
+</body>
+</html>
