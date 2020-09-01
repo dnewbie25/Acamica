@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información de Contacto</title>
+</head>
+<body>
+  <header id="header">
+    <h1>¿Quieres compartir algo con nosotros?</h1>
+  </header>
+
+  <section id="introduction">
+    <p>A través de este formulario puedes enviarme un mensaje para ayudarme a corregir errores, a mejorar mi blog, o simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjame un mensaje. Estaré feliz de contestarte!</p>
+  </section>
+
+  <section id="formulario">
+    <form action="somewebsite.com" target="_blank">
+      <p>Tu nombre: <input type="text" name="nombre" placeholder="Nombre"></p>
+      <p>Tu email: <input type="email" name="email" placeholder="Email"></p>
+      <p>Tu edad: <input type="number" name="email" placeholder="Edad" min="1" max="99"></p>
+      <p>¿De dónde eres?
+        <select name="pais">
+          <option value="Argentina">Argentina</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Panamá">Panamá</option>
+          <option value="Perú">Perú</option> 
+        </select>
+      </p>
+      <p>¿Qué pregunta, sugerencia o queja tienes?</p>
+      <textarea name="PQRS" placeholder="Dinos qué te interesa saber..." rows="8" cols="16"></textarea>
+
+      <p>
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Comenzar de nuevo">
+      </p>
+    </form>
+  </section>
+  
+
+
+</body>
+</html>
