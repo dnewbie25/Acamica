@@ -1,0 +1,124 @@
+<!--Ejercicio Encuentro 3. FOrmulario Acámica-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción</title>
+</head>
+<body>
+  
+  <h1>¿Quieres ser parte de Acámica?<br> Aplica Ahora</h1>
+  <section id="formulario-inscripcion">
+    <form action="/action_page.php" method="get" target="_blank">
+      <div>
+      <label for="nombre">
+        Nombre
+        <input type="text" name="nombre" id="nombre" placeholder="Nombres" required>
+      </label>
+      </div>
+
+      <div>
+      <label for="apellido">
+        Apellido
+        <input type="text" name="apellido" id="apellido" placeholder="Apellidos" required>
+      </label>
+      </div>
+
+      <div>
+      <label for="email">
+        Email
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </label>
+      </div>
+
+      <div>
+        <label for="telefono">
+          Teléfono de Contacto
+          <input type="tel" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{7,15}">
+        </label>
+        </div>
+
+      <div>
+      <label for="pais">
+        ¿De dónde eres?
+        <select name="pais" required>
+          <option value="Argentina">Argentina</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Ecuador">Ecuador</option>
+          <opion value="El Salvador">El Salvador</opion>
+          <opion value="Guatemala">Guatemala</opion>
+          <opion value="Honduras">Honduras</opion>
+          <opion value="México">México</opion>
+          <opion value="Nicaragua">Nicaragua</opion>
+          <option value="Panamá">Panamá</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Perú">Perú</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
+      </label>
+    </div>
+
+    <fieldset>
+      <legend>¿A qué carrera deseas inscribirte?</legend>
+      <div>
+      <label for="UX/UI">
+        <input type="radio" name="carrera" value="UX/UI" required>UX/UI
+      </label>
+      </div>
+      <div>
+      <label for="DataScience">
+        <input type="radio" name="carrera" value="DataScience" required>Data Science
+      </label>
+      </div>
+      <div>
+      <label for="FullStack">
+        <input type="radio" name="carrera" value="FullStack" required>Desarrollo Web Full Stack
+      </label>
+      </div>
+      <div>
+      <label for="FrontEnd">
+        <input type="radio" name="carrera" value="FrontEnd" required>FrontEnd Avanzado
+      </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Modalidad</legend>
+      <label>
+        <input type="radio" name="modalidad" value="Presencial" required>Presencial
+      </label>
+      <label>
+        <input type="radio" name="modalidad" value="Online" required>Online
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>¿Estás trabajando actualmente?</legend>
+      <label for="trabajando-estudiando">
+        <select name=""trabajando-estudiando>
+          <option value="Si">Sí</option>
+          <option value="No">No</option>
+        </select>
+        
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Cuéntanos acerca de ti</legend>
+      <label for="descripcion">
+        <textarea name="descripcion" id="" cols="50" rows="6"></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Enviar Información">
+    <input type="reset" value="Comenzar de nuevo">
+    </form>
+  </section>
+</body>
+</html>
+
