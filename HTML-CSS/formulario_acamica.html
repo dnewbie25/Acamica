@@ -10,6 +10,7 @@
   
   <h1>¿Quieres ser parte de Acámica?<br> Aplica Ahora</h1>
   <section id="formulario-inscripcion">
+    <h2>Déjanos tus datos para poder contactarte</h2>
     <form action="/action_page.php" method="get" target="_blank">
       <div>
       <label for="nombre">
@@ -42,7 +43,8 @@
       <div>
       <label for="pais">
         ¿De dónde eres?
-        <select name="pais" required>
+        <select name="pais" id="pais" required>
+          <option value="">Elige un país</option>
           <option value="Argentina">Argentina</option>
           <option value="Bolivia">Bolivia</option>
           <option value="Brasil">Brasil</option>
@@ -50,11 +52,11 @@
           <option value="Colombia">Colombia</option>
           <option value="Costa Rica">Costa Rica</option>
           <option value="Ecuador">Ecuador</option>
-          <opion value="El Salvador">El Salvador</opion>
-          <opion value="Guatemala">Guatemala</opion>
-          <opion value="Honduras">Honduras</opion>
-          <opion value="México">México</opion>
-          <opion value="Nicaragua">Nicaragua</opion>
+          <option value="El Salvador">El Salvador</option>
+          <option value="Guatemala">Guatemala</option>
+          <option value="Honduras">Honduras</option>
+          <option value="México">México</option>
+          <option value="Nicaragua">Nicaragua</option>
           <option value="Panamá">Panamá</option>
           <option value="Paraguay">Paraguay</option>
           <option value="Perú">Perú</option>
@@ -68,22 +70,22 @@
       <legend>¿A qué carrera deseas inscribirte?</legend>
       <div>
       <label for="UX/UI">
-        <input type="radio" name="carrera" value="UX/UI" required>UX/UI
+        <input type="radio" name="carrera" value="UX/UI" id="UX/UI" required>UX/UI
       </label>
       </div>
       <div>
       <label for="DataScience">
-        <input type="radio" name="carrera" value="DataScience" required>Data Science
+        <input type="radio" name="carrera" id="DataScience" value="DataScience" required>Data Science
       </label>
       </div>
       <div>
       <label for="FullStack">
-        <input type="radio" name="carrera" value="FullStack" required>Desarrollo Web Full Stack
+        <input type="radio" name="carrera" value="FullStack" id="FullStack" required>Desarrollo Web Full Stack
       </label>
       </div>
       <div>
       <label for="FrontEnd">
-        <input type="radio" name="carrera" value="FrontEnd" required>FrontEnd Avanzado
+        <input type="radio" name="carrera" value="FrontEnd" id="FrontEnd" required>FrontEnd Avanzado
       </label>
       </div>
     </fieldset>
@@ -101,7 +103,8 @@
     <fieldset>
       <legend>¿Estás trabajando actualmente?</legend>
       <label for="trabajando-estudiando">
-        <select name=""trabajando-estudiando>
+        <select name="trabajando-estudiando" id="trabajando-estudiando">
+          <option value="">Cuál es tu ocupación</option>
           <option value="Si">Sí</option>
           <option value="No">No</option>
         </select>
@@ -112,7 +115,7 @@
     <fieldset>
       <legend>Cuéntanos acerca de ti</legend>
       <label for="descripcion">
-        <textarea name="descripcion" id="" cols="50" rows="6"></textarea>
+        <textarea name="descripcion" id="descripcion" cols="50" rows="6"></textarea>
       </label>
     </fieldset>
     <input type="submit" value="Enviar Información">
