@@ -36,7 +36,7 @@
       <div>
         <label for="telefono">
           Teléfono de Contacto
-          <input type="tel" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{7,15}">
+          <input type="tel" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[+]?[0-9]{7,15}">
         </label>
         </div>
 
@@ -105,8 +105,10 @@
       <label for="trabajando-estudiando">
         <select name="trabajando-estudiando" id="trabajando-estudiando">
           <option value="">Cuál es tu ocupación</option>
-          <option value="Si">Sí</option>
-          <option value="No">No</option>
+          <option value="Empleado">Empleado</option>
+          <option value="Independiente">Independiente</option>
+          <option value="Estudiante">Estudiante</option>
+          <option value="N/A">N/A</option>
         </select>
         
       </label>
@@ -115,7 +117,7 @@
     <fieldset>
       <legend>Cuéntanos acerca de ti</legend>
       <label for="descripcion">
-        <textarea name="descripcion" id="descripcion" cols="50" rows="6"></textarea>
+        <textarea name="descripcion" id="descripcion" cols="50" rows="6" placeholder="Qué te gusta, qué te disgusta..."></textarea>
       </label>
     </fieldset>
     <input type="submit" value="Enviar Información">
