@@ -1,69 +1,69 @@
-body{
-  background-color: rgb(241, 227, 201);
-  font: Helvetica;
-}
+  body{
+    background-color: rgb(241, 227, 201);
+    font-family: Helvetica;
+  }
 
-a:link{
-  color: blueviolet;
-  text-decoration: none;
-}
+  a:link{
+    color: blueviolet;
+    text-decoration: none;
+  }
 
-a:active{
-  color: red;
-}
+  a:active{
+    color: red;
+  }
 
-a:visited{
-  color: violet;
-}
+  a:visited{
+    color: violet;
+  }
 
-h1, h2, h4 {
-  color: rgb(24, 191, 197);
-  font-family: 'Montserrat', sans-serif;
-}
+  h1, h2, h4 {
+    color: rgb(24, 191, 197);
+    font-family: 'Montserrat', sans-serif;
+  }
 
-#encabezado{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-}
+  #encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
 
-ul{
-  list-style-type: none;
-}
+  ul{
+    list-style-type: none;
+  }
+      
+  #resena {
+    margin: auto;
+    float: left;
+    width: 49%;
+    height: 25%;
+  }
+      
+  #discografia{
+    margin: auto;
+    float: right;
+    width: 49%;
+    height: 25%;          
+  }
+
+  #redes{
+    margin-top: 5em;
+    float: left;
     
-#reseña {
-  margin: auto;
-  float: left;
-  width: 49%;
-  height: 25%;
-}
+  }
+      
+  #imagen-redes{
+    float: left;
+    margin-top: 5em;
+
+  }
+
+  img{
+    border: 2px solid rgb(24, 191, 197);
+  }
+
+  #cancion{
+    margin-top: 2em;
+    padding-left: 45%;
     
-#discografia{
-  margin: auto;
-  float: right;
-  width: 49%;
-  height: 25%;          
-}
-
-#redes{
-  margin-top: 5em;
-  float: left;
-  
-}
-    
-#imagen-redes{
-  float: left;
-  margin-top: 5em;
-
-}
-
-img{
-  border: 2px solid rgb(24, 191, 197);
-}
-
-#cancion{
-  margin-top: 2em;
-  padding-left: 45%;
-  
-}
+  }
