@@ -1,3 +1,11 @@
+/*Imported fonts*/
+
+@font-face {
+  font-family: 'IBMplexmono';
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap');
+}
+
+
 /*Reset*/
 
 html, body, div, span, applet, object, iframe,
@@ -17,16 +25,14 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
-/*Imported fonts*/
 
-@font-face {
-  font-family: IBMplexmono;
-  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+/*Body style*/
+
+body {
+  font-family: 'IBMplexmono';
 }
-
 
 
