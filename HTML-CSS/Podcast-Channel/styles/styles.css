@@ -1,8 +1,24 @@
 /*Imported fonts*/
 
+
 @font-face {
-  font-family: 'IBMplexmono';
-  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap');
+  font-family: 'Monoregular';
+  src: url('../styles/webfonts/IBMPlexMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'italic';
+  src: url('../styles/webfonts/IBMPlexMono-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url('../styles/webfonts/IBMPlexMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../styles/webfonts/IBMPlexSans-Regular.ttf');
 }
 
 
@@ -29,10 +45,54 @@ time, mark, audio, video {
 }
 
 
-/*Body style*/
 
-body {
-  font-family: 'IBMplexmono';
+/*Grid container for mobile*/
+@media all and (max-width: 550px){
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 44px repeat(5,auto-fit);
+  }
+
+  /*Header style*/
+
+  header {
+    display: grid;
+    grid-template-rows: repeat(4, auto-fit);
+  }
+
+  header .logo{
+    width: 24px;
+    height: 24px;
+  
+  }
+
+  header ul li{
+    grid: 1/1;
+    place-items: start end;
+  } 
+
+  h1 {
+    font-family: 'IBMPlexSans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+  }
+
+  h2 {
+    font-family: 'IBMPlexSans', sans-serif;
+    letter-spacing: 0;
+    font-size: 36px;
+  }
+
+  /*Main and sections grid*/
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(6,autofit);
+  }
+
+
+  
 }
-
-
